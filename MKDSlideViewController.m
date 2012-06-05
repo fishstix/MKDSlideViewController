@@ -10,7 +10,6 @@
 
 @interface MKDSlideViewController ()
 
-@property (nonatomic, retain) UIViewController * mainViewController;
 @property (nonatomic, retain) UIView * mainContainerView;
 @property (nonatomic, retain) UIView * mainTapView;
 @property (nonatomic, retain) UIPanGestureRecognizer * panGesture;
@@ -263,6 +262,8 @@
     } completion:^(BOOL finished) {
         [self addTapViewOverlay];
     }];
+    
+    [self.mainViewController.view endEditing:YES];
 }
 
 - (IBAction)showRightViewController:(id)sender
@@ -276,6 +277,8 @@
     } completion:^(BOOL finished) {
         [self addTapViewOverlay];
     }];
+    
+    [self.mainViewController.view endEditing:YES];
 }
 
 - (IBAction)showMainViewController:(id)sender

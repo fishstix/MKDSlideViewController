@@ -17,6 +17,7 @@
 @property (nonatomic, retain) UIViewController * leftViewController;
 @property (nonatomic, retain) UIViewController * rightViewController;
 @property (nonatomic, retain) UIViewController * rootViewController;
+@property (nonatomic, retain) UIViewController * mainViewController;
 
 @property (nonatomic, retain) UIBarButtonItem * menuBarButtonItem;
 
